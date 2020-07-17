@@ -1,0 +1,100 @@
+/* Styles sheet for index.html */ 
+
+/* Style formatting for body of page */
+body { 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 100%; line-height: 1.4; 
+    color: #1c1c1c; 
+    background-color: #c9ddff;
+}
+
+/* Style formatting for header of page */
+header {
+    background-image: url(../img/wood.jpg); /* Added background image of wood boards, non repeating with 100 percent fill. */
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    color: whitesmoke; 
+    padding: 20px;
+}
+
+
+/* Style formatting for <p> and <h1> within the header */
+.head1 {
+    text-align:center;
+
+}
+
+/* Style formatting for <span> within header */
+.head2 {
+    font-style: italic;
+}
+
+/* Style formatting for the div which contains the smoothie image and description on page. */
+#recipe-description {
+    border: 10px dotted whitesmoke; /* border changed to 10px, style changed to double border, and color change to whitesmoke */
+    border-right: 15px double aquamarine;
+    border-radius:10px; /*border radius used to round edges. */
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 750px;
+}
+
+/* Style formatting for smoothie image */
+#smoothie-image {
+    float:left; 
+    margin-right: 10px; 
+    height: 200px;
+    
+}
+
+/* Style formatting for div which contains the ingredients and directions on page */
+.recipe-details {
+    background-color: white; 
+    padding: 20px; 
+    font-size: .8em;
+}
+
+/* Style formatting for ingredients on page */
+#recipe-ingredients {
+    padding-left: 20px;
+}
+
+/* Style formatting for "Ingredients" and "Directions" h2 headings on page. */
+h2 {
+    text-decoration: none;  /* removed underline, added border with rounded edges and blue fill around ingredients and directions. */
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: steelblue;
+    color:whitesmoke;
+}
+
+/* Style formatting for directions on page */
+#recipe-directions {
+    padding-left: 20px;
+}
+
+/* Style formatting for directions on page */
+footer {
+    text-align: center;
+}
+
+
+/* Changed links on page to remove underline, and allow change of color to dark slate grey when hovering with mouse. */
+a{
+    text-decoration: none;
+    visibility:hidden; /* <a> link element has been hidden, as per assignment requirment to hide an element. */
+}
+
+a:hover{                        /*  Colour changes to slate gray if mouse hovered over top of link */
+    color :darkslategrey;
+}
+
+a:visited {                     /* Colour changes to purple if the link has been visited */
+    color: purple;
+}
+
+a:link{                         /* Unvisited link color is blue */
+    color: blue;
+}
