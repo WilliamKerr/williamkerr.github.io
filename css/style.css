@@ -1,24 +1,20 @@
-header {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/*Imported link for google fonts to enable use of Roboto Slab font on web pages. */
+
+
+header, .nav { /* CSS that creates a bottom border of colour grey underneath the header of page and under nav bar. */
     border-bottom: solid;
     border-color: grey;
     
 }
 
-body {
+body { /* Entire page set to a background color of white. */
     background-color: white;
     
 }
 
-main {
-    border-bottom: solid;
-    border-color: grey;
-}
-
-.nav {
-    border-bottom: solid;
-    border-color:grey;
-}
-.nav ul {
+.nav ul { /* Sets background of nav bar, centers it, and takes away list style from unordered list. */
     list-style: none;
     text-align: center;
     padding: 0;
@@ -27,27 +23,25 @@ main {
     
    }
 
-.nav li {
+.nav li {   /* Displays list items of unordered list of nav bar as inline block */
     display: inline-block;
     
 }
 
-.nav a {
+.nav a {  /* Formates font size, width, google font, display, padding, and border style (Grey) for nav bar links. */
     text-decoration: none;
     width: 100px;
     display: block;
     font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 20px;
-}
-
-a { 
-    text-decoration:none;
+    padding: 30px;
+    border-style: outset;
+    border-color:grey;
     color: white;
-
+    font-family: 'Roboto Slab', serif;
 }
 
-#logo {
+
+#logo { /* Centers logo. Sets logo picture to block, auto sets margins, and makes width 25% of header. */
     display:block;
     margin-left:auto;
     margin-right:auto;
@@ -62,70 +56,58 @@ a {
     
 }
 
-#ourWork li {
+#ourWork li { /* sets list items of page to cover 40% of viewport height, takes away list style, and sets flex-grow to change if necessary */
     height: 40vh;
     flex-grow: 1;
     list-style: none;
 }
 
-#main-page{
+#main-page{ /*sets max height of pictures to 100%, min width to 100%, and to cover the page. */
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
-    vertical-align: bottom;
+    
 }
 
-#slogan {
+#slogan, #specialize, #specializepara, h1, h2, .services { /* Sets text to center of page for various content and adds google font. */
     text-align:center;
+    font-family: 'Roboto Slab', serif;
 }
 
-#specialize {
+footer{ /* Sets footer content to center, font color to white, background color, adds top border of gray color, google font, size */
     text-align:center;
+    color:white;
+    background-color: #28536B;
+    border-top: solid;
+    border-color:gray;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
 }
 
-#specializepara {
-    text-align:center;
-}
-
-#footer {
-    text-align:center;
-}
-
-h1{
+#aboutUs { /* text set to center of page for about us information and changes font-size to 17px */
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
-h2{
-    text-align: center;
-}
-
-#aboutUs {
-    text-align: center;
-    font-size: 17px;
-}
-
-#theTeam{
+#theTeam{ /* formats picture on About Us page to be centered and 40% of screen width. */
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width: 25%;
+    width: 40%;
 }
 
-.service-image {
-    border-radius:10px;
-}
 
-#fieldset1 {
-    border-style: groove;
-}
-
-.services-image{
+.services-image{ /* formatting for images on services page */
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width: 25%;
+    width: 40%;
 }
 
-.services{
-    text-align:center;
+#orderPage{
+    font-family: 'Roboto Slab', serif;
+    
 }
+
+
+
