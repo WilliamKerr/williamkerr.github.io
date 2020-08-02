@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Kerr Photography || ORDER</title>
+        <meta name="viewport" content="width = device-width">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- HEADER OF PAGE, INCLUDING LOGO  + NAV BAR-->
+        <header>
+            <img id="logo" src="images/logo.png" alt="Kerr Photography Logo">
+        </header>
+            
+            <div class="nav">
+                <ul>
+                    <li> <a href="index.html"> HOME </a></li>
+                    <li> <a href="about.html"> ABOUT US </a></li> 
+                    <li> <a href="services.html">SERVICES </a> </li>
+                    <li>  <a href="order.html">ORDER </a> </li> 
+                 
+                </ul>
+            </div>
+        <main>
+
+            <h1>Order Your Photography Experience!</h1>
+            <p>Please use the following forms to pick your preffered service and ideal date! We'll do the rest.</p>
+
+            
+            <form method="get" action="order.html"> <!-- Form Begin-->
+                <div>
+                <!-- Field for entering contact information. Includes First/Last Name, Email, Phone -->
+                    <fieldset id="fieldset1">
+                        <legend> Contact Information </legend>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="contactInfo"  required maxlength="20">
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="contactInfo"  required maxlength="20">
+                        <label for="emailAddress">Email Address: </label>
+                        <input type="text" id="emailAddress" name="contactInfo" required maxlength="30">
+                        <label for="phoneNumber">Phone Number: </label>
+                        <input type="text" id="phoneNumber" name="contactInfo"  required maxlength="20">
+            
+                     </fieldset>
+                </div>
+            
+                <div>
+                <!-- Field for ordering landscape photography -->
+                    <fieldset>
+                        <!-- Yes or No Landscape Photography-->
+                        <legend> Landscape Photography </legend>
+                        <input type="radio" id="landscape-yes" name="landscapePhoto" value="landscape-yes"> 
+                        <label for="landscape-yes"> Yes </label>
+                        <input type="radio" id="landscape-no" name="landscapePhoto" value="landscape-no"> 
+                        <label for="landscape-no"> No </label>
+
+            
+                    </fieldset>
+                </div>
+                    
+                <div>
+                <!-- Field for ordering wedding / engagement photography -->
+                    <fieldset>
+                        <!-- Yes or No Wedding Photography-->
+                        <legend> Wedding / Engagement Photography </legend>
+                        <input type="radio" id="wedding-yes" name="weddingPhoto" value="wedding-yes"> 
+                        <label for="wedding-yes"> Yes </label>
+                        <input type="radio" id="wedding-no" name="weddingPhoto" value="wedding-no"> 
+                        <label for="wedding-no"> No </label>
+
+                        <!-- User has option to select wedding or engagement.-->
+                        <p> Is this for Wedding or Engagement? </p>
+                        <select name="weddingEngagement">
+                            <option value="wedding">Wedding</option>
+                            <option value="engagement">Engagement</option>
+                        </select>
+
+                    </fieldset>
+                </div>
+
+                <div>
+                <!-- Field for ordering pet photography -->
+                    <fieldset>
+                        <!-- Yes or No Pet Photography-->
+                        <legend> Pet Photography </legend>
+                        <input type="radio" id="pet-yes" name="petPhoto" value="pet-yes"> 
+                        <label for="pet-yes"> Yes </label>
+                        <input type="radio" id="pet-no" name="petPhoto" value="pet-no"> 
+                        <label for="pet-no"> No </label>
+
+                        <!-- User can choose type of pet they have from dropdown. -->
+                        <p> What kind of Pet?</p>
+                        <select name="pet type">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="bird">Bird</option>
+                            <option value="other">Other</option>
+                            <option value="notApplicable">N/A</option>
+                        </select>
+
+                    </fieldset>
+                </div>
+
+                <div>
+                <!-- Field for ordering adventure photography -->
+                    <fieldset>
+                        <!-- Yes or No Adventure Photography-->
+                        <legend> Adventure Photography </legend>
+                        <input type="radio" id="adventure-yes" name="adventurePhoto" value="adventure-yes"> 
+                        <label for="adventure-yes"> Yes </label>
+                        <input type="radio" id="adventure-no" name="adventurePhoto" value="adventure-no"> 
+                        <label for="adventure-no"> No </label>
+
+                        <!-- User asked if any extra equipment required for adventure photography-->
+                        <p> Is any extra equipment required for adventure? (example: boat, bike)</p>
+                        <label for="equipment">Extra Equipment Required: </label>
+                        <input type="text" id="equipment" name="extraEquipment">
+
+                    </fieldset>
+                </div>
+                <div>
+                    <!-- User can select date for photographs to be taken. -->
+                    <p> What date would you like? </p>
+                
+                    <label for="date">Photo Date: </label>
+                    <input type="date" id="photoDate" name="photoDate"> <br>
+                    
+                    <!-- Submit button for form-->
+                    <button> Submit</button>
+                </div>
+                
+                </form> <!-- Form End-->
+
+
+
+
+
+        </main>
+
+
+       <!-- Footer for the page w/ Contact Information.-->
+       <div>
+        <footer id="footer">
+            <p> CONTACT US! | Phone: 123-456-7891 | Email: madeupaddress@makebelievedomain.com | Address: 123 Not Real Way</p>
+            <p> &copy; Kerr Photography.</p>
+        </footer>
+        </div>
+
+    </body>
+</html>
